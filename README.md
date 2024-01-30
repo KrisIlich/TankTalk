@@ -1,7 +1,10 @@
 # TankTalk Application
 
 ## Overview (Work in Progress)
-TankTalk is an Android application designed for aquarium enthusiasts. It features... TBD, more to add.
+TankTalk is an Android application designed for aquarium enthusiasts. It features... TBD, more to add. 
+- Community, marketplace, friends are under consideration to be added, the biggest thing with fish tank hobbyists is their extreme need to share their progress.
+- Dashboard will include saving different tank setups and copying or sharing those setups, adding equipment, parameter anayltics, adding livestock, connecting to existing technologies like apex controllers, Maintenance routines, exporting data to letterhead, excel, or to the cloud, notes section, Calendar To Do lists
+- Free application, cloud features are behind paywall, community features will always be free
 
 ## Frontend (Android App)
 
