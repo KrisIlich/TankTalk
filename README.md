@@ -1,7 +1,7 @@
 # TankTalk Application
 
-## Overview
-TankTalk is an Android application designed for aquarium enthusiasts. It features...
+## Overview (Work in Progress)
+TankTalk is an Android application designed for aquarium enthusiasts. It features... TBD, more to add.
 
 ## Frontend (Android App)
 
@@ -14,11 +14,11 @@ TankTalk is an Android application designed for aquarium enthusiasts. It feature
 ### Libraries
 - **Jetpack Compose**: For declaritive UIs
 - **Retrofit**: For network requests
-- **LiveData and ViewModel**: For managing UI-related data.
+- **LiveData and ViewModel**: For managing UI-related data
 
 ### Homepage Functionality
-- **Login Page**: Initial screen for user authentication. Supports Google/Live sign-ins.
-- **Dashboard**: Once authenticated, the user is redirected to the dashboard, which displays fish tank parameters and other features.
+- **Login Page**: Initial screen for user authentication. Supports Google/Live sign-ins
+- **Dashboard**: Once authenticated, the user is redirected to the dashboard, which displays fish tank parameters and other features
 
 ## Backend (Google Cloud & Firebase)
 
@@ -34,7 +34,7 @@ TankTalk is an Android application designed for aquarium enthusiasts. It feature
 - **Firebase Analytics**: For tracking user interactions and app performance
 
 ## Integration for ‘Ask Aqua AI’
-- **OpenAI API**: For integrating ChatGPT functionalities.
+- **OpenAI API**: For integrating ChatGPT functionalities
 
 ## Project Structure
 
@@ -55,7 +55,7 @@ TankTalk is an Android application designed for aquarium enthusiasts. It feature
   - `res/` (Resources like layouts, strings, images)
 
 ### Backend (GCP & Firebase)
-- **Authentication**: Setup using Firebase Authentication integrated with Google Cloud.
-- **Database**: Use Cloud Firestore/Cloud SQL for data storage.
-- **Serverless Functions**: Implement logic with Cloud Functions.
-- **Notifications**: Set up using Firebase Cloud Messaging and GCP Pub/Sub.
+- **Authentication**: Setup using Firebase Authentication integrated with Google Cloud
+- **Database**: Use Cloud Firestore/Cloud SQL for data storage
+- **Serverless Functions**: Implement logic with Cloud Functions
+- **Notifications**: Set up using Firebase Cloud Messaging and GCP Pub/Sub
