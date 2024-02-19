@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.home {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    color: #0E1C36;
+}
+
+.home-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background-color: #F8F8F8;
+    z-index: 1;
+    position: fixed;
+    margin: -10px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 1000;
+}
+
+.logo-image {
+    height: auto;
+    width: 72px;
+    margin-right: -10px;
+}
+
+.navigation {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -11px;
+}
+
+.navigation button,
+.navigation .account {
+   align-items: center;
+   appearance: none;
+   background-color: transparent;
+   border-radius: 8px;
+   border-style: none;
+   box-shadow: none;/*rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;*/
+   box-sizing: border-box;
+   color: #3c4043;
+   cursor: pointer;
+   display: inline-flex;
+   fill: currentcolor;
+   font-family: "Google Sans",Roboto,Arial,sans-serif;
+   font-size: 11px;
+   font-weight: 600;
+   height: 34px;
+   justify-content: space-between;
+   letter-spacing: .25px;
+   line-height: normal;
+   max-width: 100%;
+   overflow: visible;
+   padding: 3px 24px;
+   position: relative;
+   text-align: center;
+   text-transform: none;
+   transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   width: auto;
+   will-change: transform,opacity;
+   z-index: 0;
+   margin-right: 2px;
+}
+
+.navigation button:hover,
+.home-main .cta:hover{
+    background: #F6F9FE;
+    color: #174ea6;
+}
+
+.navigation button:hover:active,
+.home-main .cta:hover:active,
+.email-signup button:hover:active{
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.navigation button:hover:focus,
+.home-main .cta:hover:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+}
+
+.navigation button:hover:not(:disabled),
+.home-main .cta:hover:not(:disabled),
+.email-signup button:hover:not(:disabled){
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.navigation button:hover:not(:disabled):hover,
+.home-main .cta:hover:not(:disabled):hover,
+.email-signup button:hover:not(:disabled):hover{
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.navigation button:hover:not(:disabled):focus,
+.home-main .cta:hover:not(:disabled):focus,
+.email-signup button:hover:not(:disabled):focus{
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.navigation button:hover:not(:disabled):active,
+.home-main .cta:hover:not(:disabled):active,
+.email-signup button:hover:not(:disabled):active{
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.navigation button:hover:disabled,
+.home-main .cta:hover:disabled,
+.email-signup button:hover:disabled{
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.email-signup button:hover{
+    background: #25344e;
+    color: #fff;
+}
+
+.navigation .cta,
+.home-main .cta {
+    background-color: #046ad0;
+    color: #FFEDE1;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    margin-right: 30px;
+}
+
+.navigation .account {
+    font-size: 13px;
+    background: none;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.home-main .main-content {
+    color: #f9fbf2;
+    background-color: #0E1C36;
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-main .body-title {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    max-width: 50%;
+    padding: 0 20px;
+    margin: 20px 10px;
+    margin-top: 120px;
+}
+
+.home-main .body-text {
+    font-family: Lato, Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    max-width: 60%;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+
+
+
+
+.home-main .cta {
+    align-items: center;
+    appearance: none;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: none;/*rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;*/
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    height: 45px;
+    justify-content: space-between;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 12px 36px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+    background-color: #046ad0;
+    color: #FFEDE1;
+    font-weight: 400;
+    margin: 25px;
+
+}
+
+.email-signup {
+    display: flex; /* Aligns the input and button side by side */
+    border: 1px solid #ccc; /* Example border color */
+    border-radius: 15px; /* 0 for none, Rounded corners for the container */
+    overflow: hidden; /* Ensures the child elements adhere to the container's border radius */;
+}
+
+.email-signup input[type="email"] {
+    flex-grow: 1; /* Allows the input to take up as much space as possible */
+    font-family: Lato, Roboto, sans-serif;
+    border: none; /* Removes border */
+    padding-left: 15px;
+    padding-right: 110px; /* Adds some padding inside the input */
+    font-size: 16px; /* Sets the font size */
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+    margin: 0; /* Removes any default margin */
+    background-color: #0E1C36;
+    color: white;
+}
+
+.input-form-text {
+    color: #fff;
+}
+
+.email-signup button {
+    font-family: Lato, Roboto, sans-serif;
+    padding: 10px 20px; /* Adds padding inside the button */
+    background: none; /* Background color for the button */
+    color: white; /* Text color for the button */
+    border: 2px solid white; /* Removes border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border-radius: 0px 15px 15px 0px; /* Rounded corners on the right side */
+    font-size: 16px; /* Sets the font size */
+    font-weight: bold; /* Makes the font bold */
+}
+
+.home-banner-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-page-banner {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.home-page-video,
+.icon-home-section1 {
+    padding: 2rem;
+    background-color: #f9fbf2;
+}
+
+.icon-home-section1 div {
+    padding: 1rem;
+    background-color: #AFCBFF;
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+.final-cta{
+    text-align: center;
+    padding: 2rem;
+}
+
+.home-footer{
+    padding: 1rem;
+    background-color: #D7f9FF;
+}
+
+input::placeholder{
+    overflow: visible;
+    color: #fff;
+    opacity: .65;
+    align-items: flex-start;
+}
+
+@media (max-width:768px){
+    .home-header,
+    .navigation{
+        flex-direction: column;
+    }
+    .navigation button,
+    .navigation .cta,
+    .navigation .account {
+        margin: 5px 0;
+    }
+}
