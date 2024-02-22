@@ -3,7 +3,8 @@ import '../assets/styles/Home.css'
 import bannerImage from '../assets/images/home-banner.png'
 import Header from "./shared/Header";
 
-const Home = () => {
+
+const HomePage = () => {
     return (
         <div className="home">
             <Header />
@@ -23,7 +24,7 @@ const Home = () => {
                 </section>
 
                 <section className="home-banner-container">
-                        <img src={bannerImage} alt="Home Page Banner" className="home-page-banner"/>
+                        <img src={bannerImage} alt="HomePage Page Banner" className="home-page-banner"/>
                 </section>
 
                 <section className="icon-home-section1">
@@ -47,4 +48,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomePage;
