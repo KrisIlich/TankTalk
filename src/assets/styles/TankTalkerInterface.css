@@ -1,0 +1,85 @@
+.tanktalker-interface {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.messages-container {
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    transition: height 3s cubic-bezier(0, 1, 0, 1);
+    border-color: #046ad0;
+}
+
+.message {
+    padding: 0px 10px;
+    margin: 3px 3px;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #046ad0;
+    color: #f9fbf2;
+}
+
+.typing-indicator {
+    animation: typing .3s infinite;
+}
+
+@keyframes typing {
+    0% {content: '.';}
+    33% {content: '..';}
+    66% {content: '...';}
+}
+
+.message.ai {
+    align-items: flex-start;
+    background-color: #ebebeb;
+
+}
+
+.typing-indicator span::before,
+.typing-indicator span::after {
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 6px;
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 0%;
+    animation: dotTyping .3s infinite;
+}
+
+.typing-indicator span::before{
+    left: 4px;
+    animation-delay: 0s;
+}
+
+.typing-indicator span::after {
+    right: 4px;
+    animation-delay: 0.5s;
+}
+
+@keyframes dotTyping {
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.messages-container.chat-started {
+    height: 275px;
+    overflow-y: auto;
+}
