@@ -23,7 +23,7 @@ const Home = () => {
                 </section>
 
                 <section className="home-banner-container">
-                    <img src={bannerImage} alt="Home Page Banner" className="home-page-banner"/>
+                        <img src={bannerImage} alt="Home Page Banner" className="home-page-banner"/>
                 </section>
 
                 <section className="icon-home-section1">
