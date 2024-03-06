@@ -25,6 +25,7 @@
     margin: 3px 3px;
     border-radius: 10px;
     max-width: fit-content;
+    align-self: flex-start;
 }
 
 .message.user {
@@ -34,13 +35,37 @@
 }
 
 .typing-indicator {
-    animation: typing .3s infinite;
+    animation: dotTyping 1.2s infinite step-start;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes typing {
-    0% {content: '.';}
-    33% {content: '..';}
-    66% {content: '...';}
+.typing-indicator span {
+    width: 5px;
+    height: 5px; /* Adjust height to match width */
+    background-color: #333;
+    border-radius: 50%; /* Ensures the dot is circular */
+    margin: 0 2px; /* Adds spacing between dots */
+    animation: dotFade .6s infinite alternate; /* Updated animation name */
+}
+
+@keyframes dotFade {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.typing-indicator span:nth-child(1) {
+    animation-delay: 0s; /* No delay for the first dot */
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.1s; /* Delay for the second dot */
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.2s; /* Delay for the third dot */
 }
 
 .message.ai {
@@ -49,37 +74,7 @@
 
 }
 
-.typing-indicator span::before,
-.typing-indicator span::after {
-    content:'';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 6px;
-    background-color: #333;
-    border-radius: 50%;
-    opacity: 0%;
-    animation: dotTyping .3s infinite;
-}
-
-.typing-indicator span::before{
-    left: 4px;
-    animation-delay: 0s;
-}
-
-.typing-indicator span::after {
-    right: 4px;
-    animation-delay: 0.5s;
-}
-
-@keyframes dotTyping {
-    0%{opacity: 0;}
-    50%{opacity: 1;}
-    100%{opacity: 0;}
-}
-
 .messages-container.chat-started {
-    height: 275px;
+    height: 325px;
     overflow-y: auto;
 }

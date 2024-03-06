@@ -7,7 +7,6 @@ import DashboardPage from './DashboardPage';
 import LoginPage from './LoginPage';
 import TankTalkerAIPage from './TankTalkerAI/TankTalkerAIPage'
 import HomePage from "./HomePage";
-
 function App() {
 
     const [isAuthenticated, setIsAuthenticated] = useState(false);

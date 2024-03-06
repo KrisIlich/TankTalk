@@ -31,7 +31,15 @@ const TankTalkerInterface = ({conversation, isTyping}) => {
                         <p>{message.text}</p>
                     </div>
                 ))}
-                {isTyping && <div className={'typing-indicator'}><span>...</span></div>}
+                {isTyping && (
+                    <div className={"message ai"}>
+                        <div className={'typing-indicator'}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                )}
                 <div ref={messagesEndRef} />
             </div>
         </div>
