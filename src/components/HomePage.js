@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/Home.css'
 import bannerImage from '../assets/images/home-banner.png'
-import Header from "./shared/Header";
+import Header from "./shared/Header.js";
 
 const Home = () => {
     return (

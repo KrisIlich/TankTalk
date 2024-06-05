@@ -19,7 +19,7 @@ const Header = () => {
                 {/*Header Navigation Buttons*/}
                 <nav className="navigation">
                     <button onClick={() => navigate("/")}>Dashboard</button>
-                    <button onClick={() => navigate("/tanktalkerai")}>TankTalker AI</button>
+                    <button onClick={() => navigate("/tanktalkerai")}>Fishtank Assistant</button>
                     <button>Fishipedia</button>
                     <button>Community</button>
                     <button>Sign Up</button>

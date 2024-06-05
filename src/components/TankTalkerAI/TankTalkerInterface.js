@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState} from 'react';
-import { saveAsPDF } from '../shared/SaveAsPDF';
+import { saveAsPDF } from '../shared/SaveAsPDF.js';
 import '../../assets/styles/TankTalkerInterface.css'
-import {clear} from "@testing-library/user-event/dist/clear";
+import {clear} from "@testing-library/user-event/dist/clear.js";
 
 // functional component for displaying the conversation interface
 const TankTalkerInterface = ({conversation, isTyping}) => {
@@ -28,7 +28,7 @@ const TankTalkerInterface = ({conversation, isTyping}) => {
             <div className={`messages-container ${chatStarted ? 'chat-started' : ''}`}>
                 {conversation.map((message, index) => (
                     <div key={index} className={`message ${message.sender}`}>
-                        <p>{message.text}</p>
+                        <p dangerouslySetInnerHTML={{__html: message.text}}></p>
                     </div>
                 ))}
                 {isTyping && (

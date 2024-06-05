@@ -2,6 +2,7 @@
   "name": "tanktalk-webapp",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -11,6 +12,7 @@
     "crypto-browserify": "^3.12.0",
     "dotenv": "^16.4.5",
     "firebase": "^10.8.0",
+    "openai": "^4.47.3",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
@@ -26,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "openai-test": "node openai-test.js"
   },
   "eslintConfig": {
     "extends": [

@@ -32,6 +32,7 @@
     align-self: flex-end;
     background-color: #046ad0;
     color: #f9fbf2;
+    text-align: right;
 }
 
 .typing-indicator {
@@ -71,10 +72,12 @@
 .message.ai {
     align-items: flex-start;
     background-color: #ebebeb;
+    text-align: left;
 
 }
 
 .messages-container.chat-started {
-    height: 325px;
+    height: 500px;
     overflow-y: auto;
+
 }
