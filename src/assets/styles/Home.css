@@ -65,7 +65,7 @@
    justify-content: space-between;
    letter-spacing: .25px;
    line-height: normal;
-   max-width: 100%;
+   max-width: 160px;
    overflow: visible;
    padding: 3px 24px;
    position: relative;
@@ -306,4 +306,47 @@ input::placeholder{
     .navigation .account {
         margin: 5px 0;
     }
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0px; /* Adjust padding as needed */
+    display: flex;
+    align-content: flex-end;
+}
+
+.dropdown-menu-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 40px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    text-align: right;
+    width: 150px;
+}
+
+.dropdown-menu a:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+/* Show the dropdown when the account button is active */
+.navigation .account.active + .dropdown-menu {
+    display: block;
 }
