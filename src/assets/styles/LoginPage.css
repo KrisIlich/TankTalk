@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.login-page {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    width: 100%;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: white;
+    padding: 40px;
+    padding-bottom: 100px;
+    -border: linear-gradient(105deg, rgb(255 46 144) 0%, rgb(61 35 185) 100%);
+    border-radius: 0px;
+}
+
+.login-heading {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    width: 100%;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 0px;
+    letter-spacing: -.3px;
+}
+
+.alternate-login {
+    display: inherit;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.auth-form input {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+
+}
+
+.auth-form button {
+    height: 50px;
+    font-size: 16px;
+    padding: 0px;
+    background-color: #1566ec;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.auth-form button:hover {
+    background-color: #F6F9FE;
+    color: #174ea6;
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 10%);
+}
+
+.auth-form input::placeholder {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-weight: 300;
+    color: #858585;
+    text-align: start;
+}
+
+.google-btn {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    position: relative;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    background-color: white;
+    color: #2a2a2a;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.google-logo-container {
+    position: absolute;
+    left: 10px;
+    display: flex;
+}
+
+.google-btn img.google-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.google-btn:hover{
+    background-color: #F6F9FE;
+    color: #174ea6;
+}
+
+p span {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.separator {
+    display: inherit;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.separator-text {
+    position: relative;
+    color: #737373;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+}
+
+.separator-text::before, .separator-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width:125px;
+    height: .5px;
+    background: #b4b4b4;
+    margin-right: 30px;
+}
+
+.separator-text::before {
+   margin-left: 30px;
+    }
+
+.separator-text::after {
+    right: 1px;
+}
+
+.email-auth {
+    width: 100%;
+}
+
+.signInEmailText {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #858585;
+    text-align: start;
+    margin-bottom: 5px;
+    padding-left: 0px;
+}
+
+.cant-login {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+
+.google-recaptcha {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    color: #858585;
+    text-align: start;
+    margin-bottom: 5px;
+    padding-left: 0px;
+}
+
+a {
+    color: #858585;
+}
